@@ -1,5 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  @apply bg-gray-200;
+}
+
+.canister {
+  @apply max-w-screen-lg shadow-md rounded bg-white p-5 mx-auto my-10;
+}
+
+.hero {
+  & img {
+    clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+    @apply h-96 w-full object-cover;
+  }
 }
