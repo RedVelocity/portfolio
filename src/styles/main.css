@@ -3,7 +3,7 @@ body {
 }
 
 .canister {
-  @apply max-w-screen-lg shadow-md rounded bg-white p-5 mx-auto my-10;
+  @apply max-w-screen-lg shadow-md rounded bg-pink-200 p-5 mx-auto my-10;
 }
 
 .hero {

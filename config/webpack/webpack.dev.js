@@ -1,11 +1,11 @@
 // const webpack = require('webpack');
-const path = require('path');
+const { resolve } = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = {
   mode: 'development',
   output: {
-    path: path.join(__dirname, '../dist'),
+    path: resolve(__dirname, '../../dist'),
     filename: 'js/bundle.js',
     publicPath: '/',
   },
@@ -15,23 +15,6 @@ const config = {
       chunkFilename: 'css/[id].css',
     }),
   ],
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: true,
-            },
-          },
-          'css-loader',
-          'postcss-loader',
-        ],
-      },
-    ],
-  },
   devtool: 'eval-source-map',
   devServer: {
     contentBase: '../dist',
