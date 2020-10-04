@@ -44,7 +44,6 @@ const config = {
       test: /\.(js|jsx|css|html|png|svg|jpg|gif)$/,
       threshold: 10240,
       minRatio: 0.8,
-      deleteOriginalAssets: true,
     }),
   ],
 };
