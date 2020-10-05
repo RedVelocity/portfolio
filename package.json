@@ -1,14 +1,16 @@
 {
-  "name": "react-starter-webpack",
+  "name": "redv-portfolio",
   "version": "1.0.0",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "portfolio"
+  ],
   "author": "",
   "license": "ISC",
   "homepage": ".",
   "scripts": {
-    "build:dev": "cross-env NODE_ENV=development webpack --config ./config/webpack/webpack.config.js",
     "build": "webpack --config ./config/webpack/webpack.config.js",
+    "build:dev": "cross-env NODE_ENV=development webpack --config ./config/webpack/webpack.config.js",
     "build:local": "cross-env NODE_ENV=production webpack --config ./config/webpack/webpack.config.js",
     "build:analyze": "cross-env NODE_ENV=production npm run build -- --env.analyze",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack/webpack.config.js --hot"
