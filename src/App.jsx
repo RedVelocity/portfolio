@@ -10,7 +10,6 @@ const App = () => {
     const yAxis = (window.innerHeight / 2 - e.pageY) / 20;
     setState({ xAxis, yAxis });
   };
-  console.log('rendered');
   return (
     <div
       className="relative min-h-screen flex items-center justify-center"
@@ -23,8 +22,8 @@ const App = () => {
           transition: 'transform 0.3s ease',
         }}
       >
-        <h1 className="font-bold text-6xl">
-          HI IM SHNK, <br /> I MAKE WEBSITES
+        <h1 className="font-bold text-6xl text-pink-300">
+          HI I&apos;M SHNK, <br /> I BUILD WEBSITES
         </h1>
       </div>
     </div>
